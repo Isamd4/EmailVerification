@@ -1,0 +1,1 @@
+the project here creates random number and sends it to a given email
