@@ -10,8 +10,8 @@ public class Test {
         int length = 4;
         CreateRandom rand=new CreateRandom(4);
         String rands=rand.getRand();
-        final String username = "isamuhammadhassan@gmail.com";
-        final String password = "Gaucho1234#";
+        final String username = "myemail";
+        final String password = "mypassword";
       /**  //Get the session object  
       Properties properties = System.getProperties();  
       properties.setProperty("mail.smtp.host", host);  
@@ -32,10 +32,10 @@ public class Test {
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("isamuhammadhassan@gmail.com"));
+            message.setFrom(new InternetAddress("fromEmail"));
             message.setRecipients(
                     Message.RecipientType.TO,
-                    InternetAddress.parse("isamuhammadhassan@yahoo.com")
+                    InternetAddress.parse("to@yahoo.com")
             );
             message.setSubject("Muhammad Isa ");
             message.setText("your otp "+rands);
